@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    font-family: 'Autour One';
+}
+
+table{
+    margin: auto;
+}
+
+td{
+    width: 150px;
+    height: 300px;
+    border: 6px solid white;
+}
+
+#one{
+    background-color: #8ecae6;
+}
+
+#two{
+    background-color: #219ebc;
+}
+
+#three{
+    background-color: #023047;
+}
+
+#four{
+    background-color: #ffb703;
+}
+
+#five{
+    background-color: #fb8500;
+}
