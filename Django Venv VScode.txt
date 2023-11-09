@@ -8,5 +8,20 @@ myDjangoEnv\Scripts\activate
 To deactivate the venv:
 deactivate
 
+
 Starting a django project:
-django-admin startproject first_project
+django-admin startproject project_name
+
+After project, make an app:
+python manage.py startapp app_name
+
+
+In the venv, to run a server:
+python manage.py runserver
+
+
+Creating a model after making them in models.py:
+python manage.py migrate
+python manage.py makemigrations app_name
+python manage.py migrate
+(models should not be ready to connect to sql database that python has made for us)
