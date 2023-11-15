@@ -6,7 +6,12 @@
     <title></title>
 </head>
 <body>
-    <h1>WELCOME TO INDEX</h1>
+    <h1>WELCOME TO RELATIVE URL TEMPLATES</h1>
+
+    <!-- 'basic_app' needs to match from urls.py app_name in basic_app -->
+    <a href="{% url 'basic_app:other' %}">THE OTHER PAGE</a>
+    <a href="{% url 'admin:index' %}">LINK TO ADMIN</a>
+    <a href="{% url 'index' %}">LINK TO INDEX</a>
 
 </body>
 </html>
