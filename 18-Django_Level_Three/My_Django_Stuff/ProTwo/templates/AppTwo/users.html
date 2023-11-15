@@ -14,6 +14,8 @@
         <h1>Please sign up here:</h1>
         <form method="POST">
             {{ form.as_p }}
+
+            <!-- csrf_token is used for validation of secure pages without showing information in the url -->
             {% csrf_token %}
             <input type="submit" class="btn btn-primary" value=Submit>
 
