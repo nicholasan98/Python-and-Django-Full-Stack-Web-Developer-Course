@@ -9,9 +9,18 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="navbar-nav mr-auto">
-            <a class="navbar-brand" href="{% url 'index' %}">DJANGO</a>
-            <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
-            <a class="nav-link" href="{% url 'basic_app:register' %}">Register</a>
+            <ul class="nav navbar-nav">
+                <a class="navbar-brand" href="{% url 'index' %}">DJANGO</a>
+                <a class="nav-link" href="{% url 'admin:index' %}">Admin</a>
+                <a class="nav-link" href="{% url 'basic_app:register' %}">Register</a>
+            
+                {% if user.is_authenticated %}
+                    <li><a class="navbar-link" href="{% url 'logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a class="navbar-link" href="{% url 'basic_app:user_login' %}"></a></li>
+                {% endif %}
+
+            </ul>
         </div>
     </nav>
 
